@@ -35,6 +35,7 @@ print("Using Python's function 'random.choice' to pick random items")
 print ( f"Random choice of card is  {choice(deck)}")
 print ( f"Random choice of card is  {choice(deck)}")
 
+# use __getitem__ to slice the cards:
 print(f"Slicing is also supported\nTop 3 cards are: ")
 print(deck[:3])
 
@@ -44,6 +45,7 @@ print(deck[12::13])
 in_deck = Card('Q', 'hearts') in deck
 print(in_deck)
 
+# # __getitem__ deck is also iterable:
 # print("Iteration is also possible:")
 # for card in deck:
 #     print(card)
@@ -52,31 +54,25 @@ print(in_deck)
 # for card in reversed(deck):
 #     print(card)
 
-# use __getitem__ to slice the cards:
-deck[:3]
-
-deck[12::13]
-
-# # __getitem__ deck is also iterable:
-# for card in deck: # doctest: +ELLIPSIS
-#     print (card)
-
-# for card in reversed(deck): # doctest: +ELLIPSIS
-#     print(card)
 
 # # collection has __contains__ method
-# Card('Q', 'hearts') in deck
-# Card('7', 'beasts') in deck
+print(Card('Q', 'hearts') in deck)
+print(Card('7', 'beasts') in deck)
 
-# # ranking cards:
-# suit_values = dict(spades = 3, hearts = 2, diamonds = 1, clubs = 0)
+# ranking cards:
+# aces are the highest
+# then by suit in the order of spades (highest), then hearts, diamonds, and clubs (lowest)
 
-# def spades_high(cards):
-#     rank_value = FrenchDeck.ranks.index(card.rank)
-#     return rank_value * len(suit_values) + suit_values[card.suit]
+suit_values = dict(spades = 3, hearts = 2, diamonds = 1, clubs = 0)
+
+def spades_high(card):
+    rank_value = FrenchDeck.ranks.index(card.rank)
+    return rank_value * len(suit_values) + suit_values[card.suit]
 
 # for card in sorted(deck, key=spades_high):
 #     print(card)
+
+
 
 
 

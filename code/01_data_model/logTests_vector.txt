@@ -1,0 +1,7 @@
+testabs (vector_nosetest.Test) ... ok
+testassertbool (vector_nosetest.Test) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.043s
+
+OK
