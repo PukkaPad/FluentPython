@@ -1,0 +1,7 @@
+.DS_Store
+*.pyc
+*.doctest
+old.py
+**/*_nosetest.py
+__pycache__/
+ellipsis_tests.py
