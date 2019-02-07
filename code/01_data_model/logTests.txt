@@ -1,8 +1,0 @@
-testFrenchDeck_7_diamonds (card_deck_nosetest.Test) ... ok
-testcard_in_deck (card_deck_nosetest.Test) ... ok
-Testing the loop for sorted(self.deck) using ELLIPSIS: ... ok
-
-----------------------------------------------------------------------
-Ran 3 tests in 0.041s
-
-OK

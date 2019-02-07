@@ -15,6 +15,7 @@ class Vector2d:
 		return hypot(self.x, self.y)
 
 	def __bool__(self):
+		"""It returns False if the magnitude of the vector is zero, True otherwise. The magnitude is converted to a Boolean using bool(abs(self)) because __bool__ is expected to return a boolean"""
 		return bool(abs(self))
 
 	def __add__(self, other):
