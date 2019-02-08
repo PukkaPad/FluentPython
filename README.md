@@ -37,3 +37,5 @@ sunshine
 
 * **`ellipsis`**: It is recognized as a token by the Python parser. It is written with three full stops `(...)` and it is an alias to the `Ellipsis` object, the single instance of the `ellipsis` class. As such, it can be passed as an argument to functions and as part of a slice specification, as in` f(a, ..., z)` or `a[i:...]`. NumPy uses ... as a shortcut when slicing arrays of many dimensions; for example, if x is a 4D array, `x[i, ...]` is a shortcut for `x[i, :, :, :,]`.
 
+* **bisect(obj to insert, insertion value)**: This function return the position in the sorted list, where the number passed in argument can be placed so as to maintain the resultant list in sorted order. It maintains a list in sorted order without having to call sort each time an item is added to the list. `bisect_let(obj to insert, insertion value)`: If the insertion value is already present in the list, the insertion point will be before (to the left of) any existing entries. `bisect_right` is similar to `bisect_left` but it returns an insertion point which comes after (to the right of) any existing entries of insertion value in the object.
+
