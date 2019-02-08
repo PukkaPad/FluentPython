@@ -23,3 +23,17 @@ sunshine
 >>> print(repr('sunshine'))
 'sunshine'
 ```
+
+## Chapter 02:
+
+* **Container sequences**: Hold reference to the objects they contain. These objects can be os any type. `list`, `tuple` and `collections.deck` are examples.
+
+* **Flat sequences**: Physically store the value of each item in own memory space, not as distinct objects. They are more compact, but they are limited to holding primitive values like characters, bytes, and numbers. `str`, `bytes`, `bytearray`, `memoryview`, and `array.array` are examples. They hold items of one type. Flat sequences only hold atomic types like integer, floats or characters.
+
+* **Mutable sequences**: `list`, `bytearray`, `array.array`, `collections.deque`, and `memoryview` 
+
+* **Immutable sequences**: `tuple`, `str`, and `bytes`
+* **Generator expression**: It saves memory because it yields items one by one using the iterator protocol instead of building a whole list just to feed another constructor. They use the same syntax as `list comprehensions`, but are enclose by paranheses. More [here](https://www.python.org/dev/peps/pep-0289/)
+
+* **`ellipsis`**: It is recognized as a token by the Python parser. It is written with three full stops `(...)` and it is an alias to the `Ellipsis` object, the single instance of the `ellipsis` class. As such, it can be passed as an argument to functions and as part of a slice specification, as in` f(a, ..., z)` or `a[i:...]`. NumPy uses ... as a shortcut when slicing arrays of many dimensions; for example, if x is a 4D array, `x[i, ...]` is a shortcut for `x[i, :, :, :,]`.
+
