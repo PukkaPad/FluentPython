@@ -45,4 +45,25 @@ sunshine
 
 * **`time.perf_counter`**: Return the value (in fractional seconds) of a performance counter. More [here](https://stackoverflow.com/a/25787875)
 
+## Chapter 03:
+
+* **`re.compile`**: The purpose of `compile`  is to compile the regular expression pattern that will be used for matching later. Great reminder about `special sequences` [here](https://www.regular-expressions.info/characters.html#special). For instance, `\w` matches one alphanumeric character. It is short for `[a-zA-Z0-9]` The `+` siggn is  a `quantifier`. It means *one or more*
+
+* **match**: This method determine if the regurlar expression matches at the beginning of the string. It returns a match object or None (in case no match was found)
+
+* **finditer**: Returns an iterator over all non-overlapping matches. More [here](https://www.saltycrane.com/blog/2007/10/python-finditer-regular-expression/)
+
+* **group()**: Return the string matched by the regular expression
+
+* **strat()** Returns the start position of the string. For example:
+```python
+>>> import re
+>>> mo = re.search("[0-9]+", "Customer number: 232454, Date: February 12, 2011")
+>>> mo.group()
+'232454'
+mo.start()
+17
+```
+More [here](https://www.python-course.eu/python3_re.php)
+
 
