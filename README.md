@@ -43,6 +43,6 @@ sunshine
 
 * **memoryview**: A `memoryview` is essentially a generalized NumPy array structure in Python itself (without the math). It allows you to share memory between data-structures (things like PIL images, SQLlite databases, NumPy arrays, etc.) without first copying. This is very important for large data sets. The method `memoryview.cast` will cast a `memoryview` to a new format or shape (reah more [here](https://docs.python.org/3/library/stdtypes.html#binaryseq)). The return value is a new memoryview, but the buffer itself is not copied. One of the destination formats must be a byte format (‘B’, ‘b’ or ‘c’). The byte length of the result must be the same as the original length.
 
-**
+* **`time.perf_counter`**: Return the value (in fractional seconds) of a performance counter. More [here](https://stackoverflow.com/a/25787875)
 
 

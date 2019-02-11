@@ -6,3 +6,5 @@ old.py
 __pycache__/
 ellipsis_tests.py
 *.bin
+*.npy
+*.txt
