@@ -37,7 +37,6 @@ with open(sys.argv[1], encoding='utf-8') as fp:
 for word in sorted(index, key = str.upper):
     print(word, index[word])
 
-# Mappings with Flexible Key Lookup
 
 
 

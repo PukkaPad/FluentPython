@@ -1,0 +1,9 @@
+testGet (StrKeyDict0_nosetests.Test) ... ok
+testIn (StrKeyDict0_nosetests.Test) ... ok
+testNotIn (StrKeyDict0_nosetests.Test) ... ok
+testReturnKeyError (StrKeyDict0_nosetests.Test) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.042s
+
+OK
