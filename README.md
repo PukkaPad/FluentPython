@@ -66,4 +66,6 @@ mo.start()
 ```
 More [here](https://www.python-course.eu/python3_re.php)
 
+* **MappingProxyType**: It returns a m`mappingproxy` instance that is read-only. [Info](https://docs.python.org/3/library/types.html)
+
 

@@ -22,3 +22,4 @@ if __name__ == "main":
 
 d = StrKeyDict0([('2', 'two'), ('4', 'four')])
 print(d['2'])
+print(d[1])
