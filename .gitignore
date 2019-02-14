@@ -8,3 +8,4 @@ ellipsis_tests.py
 *.bin
 *.npy
 *.txt
+*.gif
