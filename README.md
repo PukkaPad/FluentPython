@@ -69,3 +69,7 @@ More [here](https://www.python-course.eu/python3_re.php)
 * **MappingProxyType**: It returns a m`mappingproxy` instance that is read-only. [Info](https://docs.python.org/3/library/types.html)
 
 
+## Chapter 05
+
+* **Higher-Order Functions**: a function that takes a function as argument or returns a function as the result 
+

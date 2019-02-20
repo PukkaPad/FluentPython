@@ -6,7 +6,7 @@ print(l[2:])
 # Slice objects
 # s[start:stop:step]
 #  If there is no value before the first colon, it means to start at the beginning index of the list
-# If there isn't a value after the first colon, it means to go all the way to the end of the list (it saves time as it's not necessary to specify len(s))
+# If there isn't a value after the second colon, it means to go all the way to the end of the list (it saves time as it's not necessary to specify len(s))
 s = 'bicycle'
 print(s[::3]) # increment the index by 3
 print(s[::-1])
