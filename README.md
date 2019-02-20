@@ -73,3 +73,13 @@ More [here](https://www.python-course.eu/python3_re.php)
 
 * **Higher-Order Functions**: a function that takes a function as argument or returns a function as the result 
 
+* **keyword-only argument**: new feature in `Python 3`. To specify keyword-only arguments when defining a function, name them after the argument prefixed with `*`. If you don’t want to support variable positional arguments but still want keyword-only arguments, put a `*` by itself in the signature, like this:
+```python
+>>> def f(a, *, b):
+...    return a, b
+... 
+>>> f(1, b=2)
+(1, 2)
+```
+[More info](https://www.python.org/dev/peps/pep-3102/)
+
