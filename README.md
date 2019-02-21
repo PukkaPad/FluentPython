@@ -89,3 +89,5 @@ More [here](https://www.python-course.eu/python3_re.php)
 
 * **function annotations**: [PEP 3107](https://www.python.org/dev/peps/pep-3107/#fundamentals-of-function-annotations)
 
+* **ljust**: Returns a string left justified.
+
