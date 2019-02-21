@@ -1,4 +1,5 @@
 # Retrieving Information About Parameters
+from inspect import signature
 
 def clip(text, max_len = 80):
 	"""Return text clipped at the last space before or after max_len """
@@ -22,3 +23,7 @@ if __name__ == "__main__":
 	print(clip.__code__)
 	print(clip.__code__.co_varnames)
 	print(clip.__code__.co_argcount)
+
+	# Extracting the function signature
+	# sig = signature(clip)
+	# print(sig)

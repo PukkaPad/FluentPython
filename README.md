@@ -85,3 +85,7 @@ More [here](https://www.python-course.eu/python3_re.php)
 
 * **rfind()**: this method finds the occurrence of the specified value. It return `-1` if the value is not found. Syntax: `string.rfind(value, start, end)`. `start` and `end` are both optional. They refer to where to start the search (defaul is 0) and where to end the search (defualt is at the end of the string), respectively.
 
+* **inspect**: This module provides finctions to help get information about objects. `inspect.Signature` object represents the call signature of a callable object and its return annotation
+
+* **function annotations**: [PEP 3107](https://www.python.org/dev/peps/pep-3107/#fundamentals-of-function-annotations)
+
