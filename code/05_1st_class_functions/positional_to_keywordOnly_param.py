@@ -3,6 +3,8 @@
 
 def tag(name, *content, cls=None, **attrs):
     """Generate one or more HTML tags"""
+
+    # a keyword-only argument cls is used to pass “class” attributes as a workaround because class is a keyword in Python
     if cls is not None:
         attrs['class'] = cls
     if attrs:
@@ -27,3 +29,4 @@ if __name__ == "__main__":
                   'src': 'sunset.jpg', 'cls': 'framed'}
     print(my_tag)
     print(tag(**my_tag))
+
